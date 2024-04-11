@@ -4,4 +4,4 @@
     Wells Score Calculator - new & improved!
 </h1>
 
-<p align-"center">I created this based on my original code using python/flask.</p>
+<p align="center">I created this based on my original code using python/flask.</p>
