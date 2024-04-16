@@ -1,0 +1,18 @@
+body {
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+header {
+    background-color: purple;
+    color: white;
+    text-align: center;
+}
+
+div {
+   background-color: blue;
+}
+
+button {
+    margin: 1em 0;
+}

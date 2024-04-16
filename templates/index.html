@@ -2,40 +2,60 @@
 <html>
 <head>
     <title>Wells Score Calculator</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <h1>Wells Score for Pulmonary Embolism</h1>
-    <p>Please select "Yes" or "No" for the following questions:</p>
+    <header>
+        <h1>Wells Score for Pulmonary Embolism</h1>
+        <p>Please select "Yes" or "No" for the following questions:</p>
+    </header>
     <form action="/" method="post">
-        <p>Are there clinical features of deep vein thrombosis?</p>
-        <input type="radio" name="dvt" value="Yes" required> Yes
-        <input type="radio" name="dvt" value="No"> No
+        <div>
+            <p>Are there clinical features of deep vein thrombosis?</p>
+            <input type="radio" name="dvt" value="Yes" required> Yes
+            <input type="radio" name="dvt" value="No"> No
+        </div>
 
-        <p>Is an alternative diagnosis less likely than PE?</p>
-        <input type="radio" name="alt-diag" value="Yes" required> Yes
-        <input type="radio" name="alt-diag" value="No"> No
+        <div>
+            <p>Is an alternative diagnosis less likely than PE?</p>
+            <input type="radio" name="alt-diag" value="Yes" required> Yes
+            <input type="radio" name="alt-diag" value="No"> No
+        </div>
 
-        <p>Is heart rate over 100 bpm?</p>
-        <input type="radio" name="HR" value="Yes" required> Yes
-        <input type="radio" name="HR" value="No"> No
+        <div>
+            <p>Is heart rate over 100 bpm?</p>
+            <input type="radio" name="HR" value="Yes" required> Yes
+            <input type="radio" name="HR" value="No"> No
+        </div>
 
-        <p>Has the patient been immobilised for 3 days or had surgery in the previous 4 weeks?</p>
-        <input type="radio" name="immob" value="Yes" required> Yes
-        <input type="radio" name="immob" value="No"> No
+        <div>
+            <p>Has the patient been immobilised for 3 days or had surgery in the previous 4 weeks?</p>
+            <input type="radio" name="immob" value="Yes" required> Yes
+            <input type="radio" name="immob" value="No"> No
+        </div>
 
-        <p>Has the patient had a previous DVT or PE?</p>
-        <input type="radio" name="dvt-pe" value="Yes" required> Yes
-        <input type="radio" name="dvt-pe" value="No"> No
+        <div>
+            <p>Has the patient had a previous DVT or PE?</p>
+            <input type="radio" name="dvt-pe" value="Yes" required> Yes
+            <input type="radio" name="dvt-pe" value="No"> No
+        </div>
+        
+        <div>
+            <p>Does the patient have haemoptysis?</p>
+            <input type="radio" name="haemop" value="Yes" required> Yes
+            <input type="radio" name="haemop" value="No"> No
+        </div>
 
-        <p>Does the patient have haemoptysis?</p>
-        <input type="radio" name="haemop" value="Yes" required> Yes
-        <input type="radio" name="haemop" value="No"> No
-
-        <p>Does the patient have a past medical history of cancer and is receiving treatment, has been treated in the last 6 months or is being managed palliatively?</p>
-        <input type="radio" name="pmh" value="Yes" required> Yes
-        <input type="radio" name="pmh" value="No"> No
+        <div>
+            <p>Does the patient have a past medical history of cancer and is receiving treatment, has been treated in the last 6 months or is being managed palliatively?</p>
+            <input type="radio" name="pmh" value="Yes" required> Yes
+            <input type="radio" name="pmh" value="No"> No
+        </div>
 
         <button type="submit">Submit</button>
+
     </form>
 
 </body>
