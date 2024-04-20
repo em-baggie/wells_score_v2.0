@@ -1,18 +1,68 @@
 body {
-    margin-left: 20vw;
-    margin-right: 20vw;
+   background: #0221ad;
+    font-family: Helvetica, sans-serif;
+    margin: 0;
+    font-size: 16px;
 }
 
 header {
-    background-color: purple;
-    color: white;
+    background-color: #ffff;
+    color: #0221ad;
     text-align: center;
+    padding: 10px;
+}
+
+h1, header p {
+    margin: 0
+}
+
+form {
+    max-width: 530px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #1fc3e0;
+    border-radius: 10px;
 }
 
 div {
-   background-color: blue;
+   background-color: #ffff;
+   margin: 10px;
+   border-radius: 10px;
+   padding: 10px;
 }
 
 button {
-    margin: 1em 0;
+    font-size: 19px;
+    margin: auto;
+    border: 1px solid #0221ad;
+    background-color: #ffff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #0221ad;
+    color: #ffff;
+}
+
+.radio-label {
+    display: inline-block;
+    cursor: pointer;
+    padding: 5px;
+    border: 1px solid #0221ad;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* Hide the actual radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .radio-label {
+    background-color: #0221ad; /* Change to desired color */
+    color: #ffff; /* Change to desired color */
 }

@@ -14,44 +14,65 @@
     <form action="/" method="post">
         <div>
             <p>Are there clinical features of deep vein thrombosis?</p>
-            <input type="radio" name="dvt" value="Yes" required> Yes
-            <input type="radio" name="dvt" value="No"> No
+            <input type="radio" id="yes1" name="dvt" value="Yes" required>
+            <label for="yes1" class="radio-label">Yes</label>
+
+            <input type="radio" id="no1" name="dvt" value="No">
+            <label for="no1" class="radio-label">No</label>
         </div>
 
         <div>
             <p>Is an alternative diagnosis less likely than PE?</p>
-            <input type="radio" name="alt-diag" value="Yes" required> Yes
-            <input type="radio" name="alt-diag" value="No"> No
+            <input type="radio" id = "yes2" name="alt-diag" value="Yes" required>
+            <label for="yes2" class="radio-label">Yes</label>
+
+            <input type="radio" id = "no2" name="alt-diag" value="No">
+            <label for="no2" class="radio-label">No</label>
         </div>
 
         <div>
             <p>Is heart rate over 100 bpm?</p>
-            <input type="radio" name="HR" value="Yes" required> Yes
-            <input type="radio" name="HR" value="No"> No
+            <input type="radio" id = "yes3" name="HR" value="Yes" required>
+            <label for="yes3" class="radio-label">Yes</label>
+
+            <input type="radio" id = "no3" name="HR" value="No">
+            <label for="no3" class="radio-label">No</label>
         </div>
 
         <div>
             <p>Has the patient been immobilised for 3 days or had surgery in the previous 4 weeks?</p>
-            <input type="radio" name="immob" value="Yes" required> Yes
-            <input type="radio" name="immob" value="No"> No
+            <input type="radio" id = "yes4" name="immob" value="Yes" required>
+            <label for="yes4" class="radio-label">Yes</label>
+
+            <input type="radio" id = "no4" name="immob" value="No">
+            <label for="no4" class="radio-label">No</label>
         </div>
 
         <div>
             <p>Has the patient had a previous DVT or PE?</p>
-            <input type="radio" name="dvt-pe" value="Yes" required> Yes
-            <input type="radio" name="dvt-pe" value="No"> No
+            <input type="radio" id = "yes5" name="dvt-pe" value="Yes" required>
+            <label for="yes5" class="radio-label">Yes</label>
+
+            <input type="radio" id="no5" name="dvt-pe" value="No">
+            <label for="no5" class="radio-label">No</label>
         </div>
         
         <div>
             <p>Does the patient have haemoptysis?</p>
-            <input type="radio" name="haemop" value="Yes" required> Yes
-            <input type="radio" name="haemop" value="No"> No
+            <input type="radio" id = "yes6" name="haemop" value="Yes" required>
+            <label for="yes6" class="radio-label">Yes</label>
+
+            <input type="radio" id = "no6" name="haemop" value="No">
+            <label for="no6" class="radio-label">No</label>
         </div>
 
         <div>
             <p>Does the patient have a past medical history of cancer and is receiving treatment, has been treated in the last 6 months or is being managed palliatively?</p>
-            <input type="radio" name="pmh" value="Yes" required> Yes
-            <input type="radio" name="pmh" value="No"> No
+            <input type="radio" id = "yes7" name="pmh" value="Yes" required>
+            <label for="yes7" class="radio-label">Yes</label>
+
+            <input type="radio" id = "no7" name="pmh" value="No">
+            <label for="no7" class="radio-label">No</label>
         </div>
 
         <button type="submit">Submit</button>

@@ -3,11 +3,18 @@
 <html>
 <head>
     <title>Wells Score Result</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles1.css') }}">
 </head>
 <body>
+    <header>
     <h1>Wells Score Result</h1>
-    <!--{{ }} contains placeholder - score is inserted when the template is rendered by Flask-->
-    <p>The calculated Wells score is: {{ score }}</p>
-    <p>{{ advice }}</p>
+    </header>
+    <section>
+        <div>
+            <p>The calculated Wells score is: {{ score }}</p>
+            <p>{{ advice }}</p>
+        </div>
+    </section>
 </body>
 </html>
