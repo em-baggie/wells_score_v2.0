@@ -26,7 +26,7 @@ div {
 }
 
 section {
-    max-width: 530px;
+    max-width: 600px;
     display: flex;
     flex-direction: column;
     margin: 20px auto;
